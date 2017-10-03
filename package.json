@@ -1,0 +1,12 @@
+{
+  "name": "records",
+  "version": "1.0.0",
+  "description": "Breakable toy to keep track of learning stuff",
+  "main": "index.js",
+  "repository": "git@github.com:dbugsy/records.git",
+  "author": "dbugsy <dpbergquist@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.8.0"
+  }
+}
