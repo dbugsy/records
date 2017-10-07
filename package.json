@@ -2,11 +2,24 @@
   "name": "records",
   "version": "1.0.0",
   "description": "Breakable toy to keep track of learning stuff",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "git@github.com:dbugsy/records.git",
   "author": "dbugsy <dpbergquist@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "devDependencies": {
-    "eslint": "^4.8.0"
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.8.0",
+    "graphql-tester": "^0.0.5",
+    "mocha": "^4.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "nodemon": "^1.12.1"
   }
 }
