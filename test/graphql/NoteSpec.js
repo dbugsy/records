@@ -10,6 +10,26 @@ describe("Notes", function () {
 
   const noteContent = "remember this important thing!";
 
+  describe("creating notes", function () {
+    it("creates a note, and returns id of new note", async function () {
+      const query = `mutation CreateNote($content: String) {
+        createNote(content: $content) {
+          id
+        }
+      }`;
+      const options = {
+        variables: {
+          content: noteContent
+        }
+      };
+
+      const response = await sendRequest(query, options);
+
+      expect(response.success).to.equal(true);
+      expect(response.data.createNote.id).to.equal("1");
+    });
+  });
+
   describe("retrieving notes", function () {
 
     it("gets a note", async function () {
